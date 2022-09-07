@@ -45,12 +45,6 @@ public class MobileStore {
         int countLines = 0;
         //Mobile[] mobiles = null;
         try {
-            /*FileReader fileReader = new FileReader(fileName);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String line = bufferedReader.readLine();
-            while((line = bufferedReader.readLine()) != null){
-                countLines++;
-            }*/
             //mobiles = new Mobile[countLines];
             FileReader fileReader = new FileReader(fileName);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -70,9 +64,7 @@ public class MobileStore {
                 allMobiles.add(new Mobile(brandName, modelName, cost, screenSize, batteryLife, storageSpace, cameraPixels));
                 //index++;
             }
-            /*for (int i = 0; i < mobiles.length; i++) {
-                allMobiles.add(mobiles[i]);
-            }*/
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
